@@ -1,0 +1,304 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: #FCFCFC;
+}
+
+section {
+    width: 100%;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: black;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  height: 1032px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.home {
+    height: 45px;
+    margin-top: 45px;
+    margin-right: 80px;
+    text-align: center;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+.contenu {
+  width: 100%;
+  height: 919px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block1:hover, .block2:hover, .block3:hover {
+    filter: grayscale(0%);
+    /*cursor: pointer;*/
+
+}
+
+.block1{
+    background: url(../image/design/chocolat.png);
+    filter: grayscale(80%);
+    width: 550px;
+    height: 715px;
+}
+
+.block2{
+    background: url(../image/design/haut.png);
+    filter: grayscale(80%);
+    width: 550px;
+    height: 715px;
+}
+
+.block3{
+    background: url(../image/design/tea.png);
+    filter: grayscale(80%);
+    width: 550px;
+    height: 715px;
+}
+
+.block1 a {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.block2 a {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.block3 a {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.encart {
+    background: white;
+    width: 45%;
+    height: 50px;
+    margin-top: 650px;
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+
+
+.modal-body{
+    background: #FCFCFC;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.modal img{
+    width: 35%;
+}
+
+.modal-content{
+    width: 1000px;
+    right: 50%;
+}
+
+.modal-body p {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.modal-body a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.modal-body h5 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+.modal-body h5 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+.modal-body a {
+    font-size: 1.25rem;
+}
+
+.modal img{
+    width: 35%;
+}
+}
+
+@media screen and (min-width: 380px) and (max-width: 690px) {
+
+    
+.modal-body h5 {
+    font-size: 0.985rem;
+}
+
+.modal-body a {
+    font-size: 0.985rem;
+}
+
+.modal-content{
+    width: 465px;
+    right: -2px;
+}
+
+.modal img{
+    width: 55%;
+}
+}
+
+

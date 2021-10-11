@@ -1,0 +1,44 @@
+body {
+}
+
+img {
+	border-top: 15px solid black;
+	border-right: 15px solid black;
+	border-bottom: 15px solid black;
+	width: 75%;
+	margin-top: 350px;
+	margin-left: -15px;
+}
+
+
+.black{
+	width: 20px;
+    height: 210px;
+    background: #000000;
+    position: absolute;
+    top: 358px;
+    left: 1855px;
+}
+
+.black:hover {
+  animation: none;
+}
+
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 4600ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.15); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.10); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}

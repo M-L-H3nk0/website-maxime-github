@@ -1,0 +1,134 @@
+body {
+	font-family: 'Montserrat', sans-serif !important;
+	overflow-y: hidden;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	position: absolute;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+	height: 45px;
+}
+
+header div {
+	margin: 0px 60px;
+}
+
+.liste li{
+	display: inline;
+	margin-left: 45px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.liste a:hover {
+	color: #000;
+	font-weight: 600;
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.col-md-5 {
+	width: 80%;
+	height: 1009px;
+	position: relative;
+}
+
+.col-md-7 {
+	width: 100%;
+	height: 1009px;
+	margin-top: 20px;
+    margin-left: 40px;
+    display: inline;
+}
+
+.ana {
+	height: 96%;
+    margin-top: 41px;
+    margin-left: 206px;
+}
+
+.logo{
+	position: absolute;
+	bottom: 601px;
+    right: 346px;
+	width: 600px;
+	height: 150px;
+	transform: rotate(-90deg);
+}
+
+h1{
+	width: 450px;
+	display: inline-block;
+	padding-right: 60px;;
+}
+
+.texte {
+	width: 632px;
+	margin-bottom: 60px;
+}
+
+.taille {
+	width: 150px;
+	height: 32px;
+	background-color: #000;
+	line-height: 1px;
+	color: #fff;
+	display: table-cell;
+}
+
+.taille p {
+	margin-left: 10px;
+	display: inline-block;
+	text-align: center;
+	
+}
+
+.taille p:hover {
+	margin-left: 10px;
+	display: inline-block;
+	color: #fff;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.taille2 {
+	width: 100px;
+	height: 32px;
+	border: 2px solid #000;
+	line-height: 1px;
+	text-align: center;
+	display: table-cell;
+}
+
+h3{
+	color: #000;
+}
+
+.taille3 {
+	width: 215px;
+	height: 32px;
+	border: 2px solid #000;
+	line-height: 1px;
+	text-align: center;
+	margin-bottom: 50px;
+
+}

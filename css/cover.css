@@ -1,0 +1,49 @@
+/*CHANGER NUMERO PUIS IMG */
+
+.no-csstransforms3d .book[data-book="book-1"],
+.no-js .book[data-book="book-1"],
+.book[data-book="book-1"] .front {
+    background: url(../image/cover/highsnobiety.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-2"],
+.no-js .book[data-book="book-2"],
+.book[data-book="book-2"] .front {
+    background: url(../image/cover/blackwood.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-3"],
+.no-js .book[data-book="book-3"],
+.book[data-book="book-3"] .front {
+    background: url(../image/cover/altered.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-4"],
+.no-js .book[data-book="book-4"],
+.book[data-book="book-4"] .front {
+    background: url(../image/cover/artiste.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-5"],
+.no-js .book[data-book="book-5"],
+.book[data-book="book-5"] .front {
+    background: url(../image/cover/cavalry.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-6"],
+.no-js .book[data-book="book-6"],
+.book[data-book="book-6"] .front {
+    background: url(../image/cover/vejuice.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-7"],
+.no-js .book[data-book="book-7"],
+.book[data-book="book-7"] .front {
+    background: url(../image/cover/alma.png);  
+}
+
+.no-csstransforms3d .book[data-book="book-8"],
+.no-js .book[data-book="book-8"],
+.book[data-book="book-8"] .front {
+    background: url(../image/cover/marine.png);  
+}
